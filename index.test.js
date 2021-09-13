@@ -24,7 +24,7 @@ test("Counter should behave as a counter", () => {
   expect(getByTestId("count").textContent).toBe("2");
 
   fireEvent.click(getByText("-"));
-  Simulate.click(getByText("-"));
+  fireEvent.click(getByText("-"));
 
   expect(getByTestId("count").textContent).toBe("0");
 });
